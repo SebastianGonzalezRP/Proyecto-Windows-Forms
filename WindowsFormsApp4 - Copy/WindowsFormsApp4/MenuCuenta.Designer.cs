@@ -43,6 +43,8 @@
             this.TBContraseña = new System.Windows.Forms.TextBox();
             this.HTMenuCuenta = new System.Windows.Forms.Label();
             this.GBMenuCuenta = new System.Windows.Forms.GroupBox();
+            this.TBRut = new System.Windows.Forms.TextBox();
+            this.LRut = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PBMenuCuenta)).BeginInit();
             this.GBMenuCuenta.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +53,7 @@
             // 
             this.PBMenuCuenta.Location = new System.Drawing.Point(17, 48);
             this.PBMenuCuenta.Name = "PBMenuCuenta";
-            this.PBMenuCuenta.Size = new System.Drawing.Size(138, 137);
+            this.PBMenuCuenta.Size = new System.Drawing.Size(138, 173);
             this.PBMenuCuenta.TabIndex = 0;
             this.PBMenuCuenta.TabStop = false;
             // 
@@ -85,7 +87,7 @@
             // LCargo
             // 
             this.LCargo.AutoSize = true;
-            this.LCargo.Location = new System.Drawing.Point(161, 172);
+            this.LCargo.Location = new System.Drawing.Point(161, 194);
             this.LCargo.Name = "LCargo";
             this.LCargo.Size = new System.Drawing.Size(35, 13);
             this.LCargo.TabIndex = 4;
@@ -120,7 +122,7 @@
             "ADMIN",
             "ALUMNO",
             "PROFESOR"});
-            this.CBCargo.Location = new System.Drawing.Point(228, 164);
+            this.CBCargo.Location = new System.Drawing.Point(228, 191);
             this.CBCargo.Name = "CBCargo";
             this.CBCargo.Size = new System.Drawing.Size(104, 21);
             this.CBCargo.TabIndex = 9;
@@ -174,6 +176,8 @@
             // 
             // GBMenuCuenta
             // 
+            this.GBMenuCuenta.Controls.Add(this.LRut);
+            this.GBMenuCuenta.Controls.Add(this.TBRut);
             this.GBMenuCuenta.Controls.Add(this.HTMenuCuenta);
             this.GBMenuCuenta.Controls.Add(this.TBContraseña);
             this.GBMenuCuenta.Controls.Add(this.LPassword);
@@ -193,6 +197,23 @@
             this.GBMenuCuenta.Size = new System.Drawing.Size(497, 267);
             this.GBMenuCuenta.TabIndex = 0;
             this.GBMenuCuenta.TabStop = false;
+            // 
+            // TBRut
+            // 
+            this.TBRut.Location = new System.Drawing.Point(228, 160);
+            this.TBRut.Name = "TBRut";
+            this.TBRut.Size = new System.Drawing.Size(263, 20);
+            this.TBRut.TabIndex = 14;
+            this.TBRut.Text = "Ingrese Rut Sin Puntos Ni Guiones";
+            // 
+            // LRut
+            // 
+            this.LRut.AutoSize = true;
+            this.LRut.Location = new System.Drawing.Point(161, 163);
+            this.LRut.Name = "LRut";
+            this.LRut.Size = new System.Drawing.Size(24, 13);
+            this.LRut.TabIndex = 15;
+            this.LRut.Text = "Rut";
             // 
             // MenuCuenta
             // 
@@ -226,5 +247,7 @@
         private System.Windows.Forms.Label HTMenuCuenta;
         private System.Windows.Forms.GroupBox GBMenuCuenta;
         private System.Windows.Forms.ComboBox CBCargo;
+        private System.Windows.Forms.Label LRut;
+        private System.Windows.Forms.TextBox TBRut;
     }
 }

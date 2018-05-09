@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary2
 {
-    public abstract class Persona
+    public class Persona
     {
         public string nombre { get; set; }
         public string apellido { get; set; }
         public string email { get; set; }
-        public Credencial credencial {get; set;}
+        public string rut { get; set; }
 
-        public Persona(string nombre, string apellido, string email, Credencial credencial)
+        public Persona(string nombre, string apellido, string email, string rut)
         {
             this.nombre = nombre;
             this.apellido = apellido;
             this.email = email;
-            this.credencial = credencial;
+            this.rut = rut;
         }
     }
 }

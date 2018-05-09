@@ -13,10 +13,9 @@ namespace ClassLibrary2
         public string appellido { get; set; }
         public string carrera{ get; set; }
 
-        public Estudiante(string nombre, string apellido, string email, string carrera, Credencial credencial) : base(nombre, apellido, email, credencial)
+        public Estudiante(string nombre, string apellido, string email, string carrera, string rut) : base(nombre, apellido, email, rut)
         {
             this.carrera = carrera;
-
         }
     }
 }

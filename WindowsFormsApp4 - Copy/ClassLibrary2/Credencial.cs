@@ -11,12 +11,13 @@ namespace ClassLibrary2
         public string username { get; set; }
         public string password { get; set; }
         public string acceso { get; set; }
-
-        public Credencial(string username, string password, string acceso)
+        public string rut { get; set; }
+        public Credencial(string username, string password, string acceso,string rut)
         {
             this.username = username;
             this.password = password;
             this.acceso = acceso;
+            this.rut = rut;
         }
     }
 }

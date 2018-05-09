@@ -15,10 +15,9 @@ namespace WindowsFormsApp4
     public partial class Login : Form
     {
         Thread th;
-        public static List<Credencial> credenciales;
-        public Login()
+        public Login(ClassLibrary2.Credencial)
         {
-            credenciales = new List<Credencial>();
+            List<Credencial> credencials = c
             InitializeComponent();
         }
 
@@ -92,5 +91,7 @@ namespace WindowsFormsApp4
         }
 
         #endregion
+
+
     }
 }
