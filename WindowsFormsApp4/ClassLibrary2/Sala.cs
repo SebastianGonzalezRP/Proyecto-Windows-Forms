@@ -9,7 +9,10 @@ namespace ClassLibrary2
     public class Sala
     {
         public int ID { get; set; }
-     
+        /*
+        public int capacidad {get; set; }
+        */
+
         
         public string Display
         {

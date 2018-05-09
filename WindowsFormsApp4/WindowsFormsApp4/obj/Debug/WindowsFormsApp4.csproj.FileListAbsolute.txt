@@ -11,3 +11,6 @@ c:\users\kitor\source\repos\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsF
 C:\Users\kitor\source\repos\WindowsFormsApp4\WindowsFormsApp4\bin\Debug\ClassLibrary2.dll
 C:\Users\kitor\source\repos\WindowsFormsApp4\WindowsFormsApp4\bin\Debug\ClassLibrary2.pdb
 C:\Users\kitor\source\repos\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.CopyComplete
+C:\Users\Seba\Desktop\Proyecto-Windows-Forms\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csprojResolveAssemblyReference.cache
+C:\Users\Seba\Desktop\Proyecto-Windows-Forms\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.exe
+C:\Users\Seba\Desktop\Proyecto-Windows-Forms\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.pdb
