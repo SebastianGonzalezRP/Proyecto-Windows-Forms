@@ -87,7 +87,7 @@ namespace WindowsFormsApp4
 
         private void openMenuAdmin()
         {
-            Application.Run(new Menu());
+            Application.Run(new MenuAdmin());
         }
 
         #endregion

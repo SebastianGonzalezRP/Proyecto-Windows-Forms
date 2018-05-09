@@ -153,7 +153,6 @@ namespace WindowsFormsApp4
                 salaArrendada[0] = salaSelecionada;
                 salaArrendadaBinding.ResetBindings(false);
             }
-            
         }
     }
 }
