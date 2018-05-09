@@ -52,7 +52,7 @@ namespace WindowsFormsApp4
 
             Carrito.DisplayMember = "DisplayA";
             Carrito.ValueMember = "DisplayA";
-
+            /*
             //Sala Arrendada
             salaArrendadaBinding.DataSource = salaArrendada;
             SalaArrendadaL.DataSource = salaArrendadaBinding;
@@ -65,7 +65,7 @@ namespace WindowsFormsApp4
             TotalL.DataSource = totalBinding;
 
             SalaArrendadaL.ValueMember = "Display";
-            
+            */
         }
 
         private void SetupData()

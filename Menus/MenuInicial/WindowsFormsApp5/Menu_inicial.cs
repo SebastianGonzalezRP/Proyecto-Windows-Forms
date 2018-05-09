@@ -58,10 +58,5 @@ namespace WindowsFormsApp5
             this.Close();
              
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

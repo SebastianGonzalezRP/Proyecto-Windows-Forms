@@ -47,18 +47,18 @@
             this.HeaderText.Location = new System.Drawing.Point(18, 14);
             this.HeaderText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.HeaderText.Name = "HeaderText";
-            this.HeaderText.Size = new System.Drawing.Size(119, 46);
+            this.HeaderText.Size = new System.Drawing.Size(96, 37);
             this.HeaderText.TabIndex = 0;
             this.HeaderText.Text = "Menu";
             // 
             // SalasDisponibles
             // 
             this.SalasDisponibles.FormattingEnabled = true;
-            this.SalasDisponibles.ItemHeight = 25;
+            this.SalasDisponibles.ItemHeight = 20;
             this.SalasDisponibles.Location = new System.Drawing.Point(13, 128);
             this.SalasDisponibles.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SalasDisponibles.Name = "SalasDisponibles";
-            this.SalasDisponibles.Size = new System.Drawing.Size(273, 354);
+            this.SalasDisponibles.Size = new System.Drawing.Size(273, 344);
             this.SalasDisponibles.TabIndex = 1;
             // 
             // SalaDisponibeLabel
@@ -67,7 +67,7 @@
             this.SalaDisponibeLabel.Location = new System.Drawing.Point(8, 73);
             this.SalaDisponibeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SalaDisponibeLabel.Name = "SalaDisponibeLabel";
-            this.SalaDisponibeLabel.Size = new System.Drawing.Size(168, 25);
+            this.SalaDisponibeLabel.Size = new System.Drawing.Size(135, 20);
             this.SalaDisponibeLabel.TabIndex = 2;
             this.SalaDisponibeLabel.Text = "Salas Disponibles";
             // 
@@ -93,10 +93,10 @@
             // ListaAcsesorios
             // 
             this.ListaAcsesorios.FormattingEnabled = true;
-            this.ListaAcsesorios.ItemHeight = 25;
+            this.ListaAcsesorios.ItemHeight = 20;
             this.ListaAcsesorios.Location = new System.Drawing.Point(313, 128);
             this.ListaAcsesorios.Name = "ListaAcsesorios";
-            this.ListaAcsesorios.Size = new System.Drawing.Size(274, 354);
+            this.ListaAcsesorios.Size = new System.Drawing.Size(274, 344);
             this.ListaAcsesorios.TabIndex = 5;
             // 
             // AccesoriosLabel
@@ -104,18 +104,18 @@
             this.AccesoriosLabel.AutoSize = true;
             this.AccesoriosLabel.Location = new System.Drawing.Point(308, 73);
             this.AccesoriosLabel.Name = "AccesoriosLabel";
-            this.AccesoriosLabel.Size = new System.Drawing.Size(109, 25);
+            this.AccesoriosLabel.Size = new System.Drawing.Size(87, 20);
             this.AccesoriosLabel.TabIndex = 6;
             this.AccesoriosLabel.Text = "Accesorios";
             // 
             // Carrito
             // 
             this.Carrito.FormattingEnabled = true;
-            this.Carrito.ItemHeight = 25;
+            this.Carrito.ItemHeight = 20;
             this.Carrito.Location = new System.Drawing.Point(612, 128);
             this.Carrito.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Carrito.Name = "Carrito";
-            this.Carrito.Size = new System.Drawing.Size(273, 354);
+            this.Carrito.Size = new System.Drawing.Size(273, 344);
             this.Carrito.TabIndex = 7;
             // 
             // CarritoLabel
@@ -124,7 +124,7 @@
             this.CarritoLabel.Location = new System.Drawing.Point(607, 73);
             this.CarritoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CarritoLabel.Name = "CarritoLabel";
-            this.CarritoLabel.Size = new System.Drawing.Size(70, 25);
+            this.CarritoLabel.Size = new System.Drawing.Size(56, 20);
             this.CarritoLabel.TabIndex = 8;
             this.CarritoLabel.Text = "Carrito";
             // 
@@ -139,7 +139,7 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 703);
             this.Controls.Add(this.FinalizarButton);
