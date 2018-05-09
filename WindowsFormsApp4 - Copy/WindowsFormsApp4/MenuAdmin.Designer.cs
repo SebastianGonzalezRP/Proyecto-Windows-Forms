@@ -129,6 +129,7 @@
             this.BCerrarSesion.TabIndex = 9;
             this.BCerrarSesion.Text = "Cerrar Sesion";
             this.BCerrarSesion.UseVisualStyleBackColor = true;
+            this.BCerrarSesion.Click += new System.EventHandler(this.BCerrarSesion_Click);
             // 
             // HeaderText
             // 
@@ -146,9 +147,8 @@
             this.LUserInfo.AutoSize = true;
             this.LUserInfo.Location = new System.Drawing.Point(13, 66);
             this.LUserInfo.Name = "LUserInfo";
-            this.LUserInfo.Size = new System.Drawing.Size(35, 13);
+            this.LUserInfo.Size = new System.Drawing.Size(0, 13);
             this.LUserInfo.TabIndex = 11;
-            this.LUserInfo.Text = "";
             // 
             // MenuAdmin
             // 

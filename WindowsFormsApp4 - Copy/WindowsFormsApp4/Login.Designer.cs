@@ -70,14 +70,14 @@
             // 
             // TBUsername
             // 
-            this.TBUsername.Location = new System.Drawing.Point(13, 52);
+            this.TBUsername.Location = new System.Drawing.Point(12, 59);
             this.TBUsername.Name = "TBUsername";
             this.TBUsername.Size = new System.Drawing.Size(218, 20);
             this.TBUsername.TabIndex = 3;
             // 
             // TBPassword
             // 
-            this.TBPassword.Location = new System.Drawing.Point(12, 127);
+            this.TBPassword.Location = new System.Drawing.Point(12, 134);
             this.TBPassword.Name = "TBPassword";
             this.TBPassword.Size = new System.Drawing.Size(218, 20);
             this.TBPassword.TabIndex = 4;
@@ -85,18 +85,20 @@
             // LUsername
             // 
             this.LUsername.AutoSize = true;
+            this.LUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LUsername.Location = new System.Drawing.Point(12, 36);
             this.LUsername.Name = "LUsername";
-            this.LUsername.Size = new System.Drawing.Size(55, 13);
+            this.LUsername.Size = new System.Drawing.Size(83, 20);
             this.LUsername.TabIndex = 5;
             this.LUsername.Text = "Username";
             // 
             // LPassword
             // 
             this.LPassword.AutoSize = true;
+            this.LPassword.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LPassword.Location = new System.Drawing.Point(12, 111);
             this.LPassword.Name = "LPassword";
-            this.LPassword.Size = new System.Drawing.Size(53, 13);
+            this.LPassword.Size = new System.Drawing.Size(86, 20);
             this.LPassword.TabIndex = 6;
             this.LPassword.Text = "Password";
             // 
@@ -104,7 +106,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(244, 329);
+            this.ClientSize = new System.Drawing.Size(241, 329);
             this.Controls.Add(this.LPassword);
             this.Controls.Add(this.LUsername);
             this.Controls.Add(this.TBPassword);
@@ -116,11 +118,7 @@
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
-            //
-            // Credenciales
-            //
-            credenciales.Add(new ClassLibrary2.Credencial("admin", "adminpass", "ADMIN"));
-            credenciales.Add(new ClassLibrary2.Credencial("alumno", "alumnopass", "ALUMNO"));
+
         }
 
         #endregion

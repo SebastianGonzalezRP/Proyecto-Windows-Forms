@@ -25,6 +25,7 @@ namespace WindowsFormsApp4
         #region Botones Login
         private void LLCrearCuenta_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             th = new Thread(openMenuCuenta);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
@@ -91,6 +92,5 @@ namespace WindowsFormsApp4
         }
 
         #endregion
-
     }
 }

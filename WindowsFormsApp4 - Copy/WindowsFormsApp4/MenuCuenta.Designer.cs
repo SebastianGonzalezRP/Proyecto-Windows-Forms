@@ -115,7 +115,7 @@
             // 
             // CBCargo
             // 
-            this.CBCargo.FormattingEnabled = true;
+            this.CBCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBCargo.Items.AddRange(new object[] {
             "ADMIN",
             "ALUMNO",
@@ -123,14 +123,14 @@
             this.CBCargo.Location = new System.Drawing.Point(228, 164);
             this.CBCargo.Name = "CBCargo";
             this.CBCargo.Size = new System.Drawing.Size(104, 21);
-            this.CBCargo.TabIndex = 8;
+            this.CBCargo.TabIndex = 9;
             // 
             // BAceptar
             // 
             this.BAceptar.Location = new System.Drawing.Point(17, 227);
             this.BAceptar.Name = "BAceptar";
             this.BAceptar.Size = new System.Drawing.Size(138, 36);
-            this.BAceptar.TabIndex = 9;
+            this.BAceptar.TabIndex = 10;
             this.BAceptar.Text = "Aceptar";
             this.BAceptar.UseVisualStyleBackColor = true;
             this.BAceptar.Click += new System.EventHandler(this.BAceptar_Click);
@@ -140,7 +140,7 @@
             this.BSalir.Location = new System.Drawing.Point(164, 227);
             this.BSalir.Name = "BSalir";
             this.BSalir.Size = new System.Drawing.Size(168, 36);
-            this.BSalir.TabIndex = 10;
+            this.BSalir.TabIndex = 11;
             this.BSalir.Text = "Salir";
             this.BSalir.UseVisualStyleBackColor = true;
             this.BSalir.Click += new System.EventHandler(this.BSalir_Click);
@@ -159,7 +159,7 @@
             this.TBContraseña.Location = new System.Drawing.Point(228, 134);
             this.TBContraseña.Name = "TBContraseña";
             this.TBContraseña.Size = new System.Drawing.Size(263, 20);
-            this.TBContraseña.TabIndex = 12;
+            this.TBContraseña.TabIndex = 8;
             // 
             // HTMenuCuenta
             // 
@@ -219,12 +219,12 @@
         private System.Windows.Forms.TextBox TBNombre;
         private System.Windows.Forms.TextBox TBApellido;
         private System.Windows.Forms.TextBox TBMail;
-        private System.Windows.Forms.ComboBox CBCargo;
         private System.Windows.Forms.Button BAceptar;
         private System.Windows.Forms.Button BSalir;
         private System.Windows.Forms.Label LPassword;
         private System.Windows.Forms.TextBox TBContraseña;
         private System.Windows.Forms.Label HTMenuCuenta;
         private System.Windows.Forms.GroupBox GBMenuCuenta;
+        private System.Windows.Forms.ComboBox CBCargo;
     }
 }
