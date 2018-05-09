@@ -116,12 +116,7 @@
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
-            //
-            // Creacion Credenciales
-            //
-            credenciales.Add(new ClassLibrary2.Credencial("admin", "adminpass", "ADMIN"));
-            credenciales.Add(new ClassLibrary2.Credencial("alumno", "alumnopass", "ALUMNO"));
-            credenciales.Add(new ClassLibrary2.Credencial("profesor", "profesorpass", "PROFESOR"));
+
         }
 
         #endregion

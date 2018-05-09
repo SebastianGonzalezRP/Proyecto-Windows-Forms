@@ -149,7 +149,6 @@
             this.LUserInfo.Size = new System.Drawing.Size(35, 13);
             this.LUserInfo.TabIndex = 11;
             this.LUserInfo.Text = "";
-            this.LUserInfo.Click += new System.EventHandler(this.LUserInfo_Click);
             // 
             // MenuAdmin
             // 
