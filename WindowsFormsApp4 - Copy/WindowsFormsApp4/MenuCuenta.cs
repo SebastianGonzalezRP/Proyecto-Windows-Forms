@@ -22,27 +22,46 @@ namespace WindowsFormsApp4
             InitializeComponent();
             setupData();
         }
-
-        
-
         private void BAceptar_Click(object sender, EventArgs e)
         {
-            if (TBNombre.Text != "" && TBApellido.Text != "" && TBMail.Text != "" && TBContraseña.Text != "" && CBCargo.Text != "")
+            string nombre = TBNombre.Text;
+            string apellido = TBApellido.Text;
+            string mail = TBMail.Text;
+            string password = TBContraseña.Text;
+            string cargo = CBCargo.Text;
+            string rut = TBRut.Text;
+
+            if (nombre != "" && apellido != "" && mail != "" && password != "" && cargo != "" && rut != "") //Comprobando Que se llenen Todos los Datos Requeridos
             {
-                string nombre = TBNombre.Text;
-                string apellido = TBApellido.Text;
-                string mail = TBMail.Text;
-                string password = TBContraseña.Text;
-                string cargo = CBCargo.Text;
-                string rut = TBRut.Text;
+                // Almacenando Los Text Box en variables
+                
                 foreach (ClassLibrary2.Credencial c in credenciales)
                 {
-                    if (c.rut == rut || c.username == mail)
+                    if (c.rut == rut || c.username == mail) //Ya Existe un Usuario Con esos Datos -->Error
                     {
-
+                        MessageBox.Show("Imposible Crear Usuario");
+                        break;
                     }
                 }
-                MessageBox.Show("EXITOOO");
+                ClassLibrary2.Credencial a = new ClassLibrary2.Credencial(mail, password,cargo,rut);
+                credenciales.Add(a); //Agrega la credencial de la nueva cuenta, asociada a la persona mediante el rut
+
+                if (cargo == "ALUMNO") //Crea La nueva cuenta como Estudiante
+                {
+                    ClassLibrary2.Estudiante b = new ClassLibrary2.Estudiante(nombre, apellido, mail, "", rut);
+                    personas.Add(b);
+                }
+                else if (cargo == "PROFESOR")//Crea La nueva cuenta como Profesor
+                {
+                    ClassLibrary2.Profesor b = new ClassLibrary2.Profesor(nombre, apellido, mail, "", rut);
+                    personas.Add(b);
+                }
+                else if (cargo == "ADMIN")//Crea La nueva cuenta como Admin
+                {
+                    ClassLibrary2.Persona b = new ClassLibrary2.Persona(nombre, apellido, mail, rut);
+                    personas.Add(b);
+                }
+                //Limpiando Los TextBox despues de recibir parametros
                 TBNombre.Clear();
                 TBApellido.Clear();
                 TBContraseña.Clear();

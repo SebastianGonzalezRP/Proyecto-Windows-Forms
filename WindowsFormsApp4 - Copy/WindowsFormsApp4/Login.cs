@@ -15,10 +15,11 @@ namespace WindowsFormsApp4
     public partial class Login : Form
     {
         Thread th;
-        public Login(ClassLibrary2.Credencial)
+        public static List<ClassLibrary2.Credencial> credenciales = new List<ClassLibrary2.Credencial>();
+        public Login()
         {
-            List<Credencial> credencials = c
             InitializeComponent();
+            setupData();
         }
 
         #region Botones Login
@@ -32,7 +33,7 @@ namespace WindowsFormsApp4
         private void BLogin_Click(object sender, EventArgs e)
         {
             string username = TBUsername.Text;
-            foreach (Credencial c in credenciales       )
+            foreach (Credencial c in credenciales)
             {
                 if (username == c.username)
                 {
@@ -92,6 +93,10 @@ namespace WindowsFormsApp4
 
         #endregion
 
-
+        private void setupData()
+        {
+            credenciales.Add(new ClassLibrary2.Credencial("slgonzalez@miuandes.cl", "pass", "ALUMNO", "195672229"));
+            credenciales.Add(new ClassLibrary2.Credencial("ejvial@miuandes", "pass", "ADMIN", "1"));
+        }
     }
 }
