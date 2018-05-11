@@ -95,8 +95,8 @@ namespace WindowsFormsApp4
 
         private void setupData()
         {
-            credenciales.Add(new ClassLibrary2.Credencial("slgonzalez@miuandes.cl", "pass", "ALUMNO", "195672229"));
-            credenciales.Add(new ClassLibrary2.Credencial("ejvial@miuandes", "pass", "ADMIN", "1"));
+            credenciales.Add(new ClassLibrary2.Credencial("alumno", "pass", "ALUMNO", "195672229"));
+            credenciales.Add(new ClassLibrary2.Credencial("admin", "pass", "ADMIN", "1"));
         }
     }
 }

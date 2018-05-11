@@ -70,6 +70,7 @@
             // 
             // TBUsername
             // 
+            this.TBUsername.BackColor = System.Drawing.SystemColors.ControlLight;
             this.TBUsername.Location = new System.Drawing.Point(12, 59);
             this.TBUsername.Name = "TBUsername";
             this.TBUsername.Size = new System.Drawing.Size(218, 20);
@@ -77,6 +78,7 @@
             // 
             // TBPassword
             // 
+            this.TBPassword.BackColor = System.Drawing.SystemColors.ControlLight;
             this.TBPassword.Location = new System.Drawing.Point(12, 134);
             this.TBPassword.Name = "TBPassword";
             this.TBPassword.Size = new System.Drawing.Size(218, 20);
@@ -85,20 +87,20 @@
             // LUsername
             // 
             this.LUsername.AutoSize = true;
-            this.LUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LUsername.Location = new System.Drawing.Point(12, 36);
             this.LUsername.Name = "LUsername";
-            this.LUsername.Size = new System.Drawing.Size(83, 20);
+            this.LUsername.Size = new System.Drawing.Size(91, 20);
             this.LUsername.TabIndex = 5;
             this.LUsername.Text = "Username";
             // 
             // LPassword
             // 
             this.LPassword.AutoSize = true;
-            this.LPassword.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LPassword.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LPassword.Location = new System.Drawing.Point(12, 111);
             this.LPassword.Name = "LPassword";
-            this.LPassword.Size = new System.Drawing.Size(86, 20);
+            this.LPassword.Size = new System.Drawing.Size(94, 20);
             this.LPassword.TabIndex = 6;
             this.LPassword.Text = "Password";
             // 
@@ -106,6 +108,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.FondoLogin;
             this.ClientSize = new System.Drawing.Size(241, 329);
             this.Controls.Add(this.LPassword);
             this.Controls.Add(this.LUsername);

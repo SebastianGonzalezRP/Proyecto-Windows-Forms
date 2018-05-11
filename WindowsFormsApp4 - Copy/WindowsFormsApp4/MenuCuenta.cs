@@ -14,6 +14,7 @@ namespace WindowsFormsApp4
     public partial class MenuCuenta : Form
     {
         Thread th;
+        int cont = 0;
 
         public static List<ClassLibrary2.Credencial> credenciales = new List<ClassLibrary2.Credencial>();
         public List<ClassLibrary2.Persona> personas = new List<ClassLibrary2.Persona>();
@@ -30,6 +31,7 @@ namespace WindowsFormsApp4
             string password = TBContraseña.Text;
             string cargo = CBCargo.Text;
             string rut = TBRut.Text;
+            string multi = TBMulti.Text;
 
             if (nombre != "" && apellido != "" && mail != "" && password != "" && cargo != "" && rut != "") //Comprobando Que se llenen Todos los Datos Requeridos
             {
@@ -48,12 +50,12 @@ namespace WindowsFormsApp4
 
                 if (cargo == "ALUMNO") //Crea La nueva cuenta como Estudiante
                 {
-                    ClassLibrary2.Estudiante b = new ClassLibrary2.Estudiante(nombre, apellido, mail, "", rut);
+                    ClassLibrary2.Estudiante b = new ClassLibrary2.Estudiante(nombre, apellido, mail, multi, rut);
                     personas.Add(b);
                 }
                 else if (cargo == "PROFESOR")//Crea La nueva cuenta como Profesor
                 {
-                    ClassLibrary2.Profesor b = new ClassLibrary2.Profesor(nombre, apellido, mail, "", rut);
+                    ClassLibrary2.Profesor b = new ClassLibrary2.Profesor(nombre, apellido, mail, multi, rut);
                     personas.Add(b);
                 }
                 else if (cargo == "ADMIN")//Crea La nueva cuenta como Admin
@@ -85,11 +87,43 @@ namespace WindowsFormsApp4
 
         private void setupData()
         {
-            credenciales.Add(new ClassLibrary2.Credencial("slgonzalez@miuandes.cl", "pass", "ALUMNO", "195672229"));
-            credenciales.Add(new ClassLibrary2.Credencial("ejvial@miuandes", "pass", "ADMIN", "1"));
+            credenciales.Add(new ClassLibrary2.Credencial("alumno", "pass", "ALUMNO", "195672229"));
+            credenciales.Add(new ClassLibrary2.Credencial("admin", "pass", "ADMIN", "1"));
 
             personas.Add(new ClassLibrary2.Estudiante("Sebastian", "Gonzalez", "slgonzalez@miuandes.cl", "Ingenieria", "195672229"));
             personas.Add(new ClassLibrary2.Persona("Exequiel", "Vial", "ejvial@miuandes", "1"));
+        }
+
+        private void TBRut_Enter(object sender, EventArgs e)
+        {
+            if (cont==0)
+            {
+                TBRut.Text = "";
+                TBRut.ForeColor = SystemColors.ActiveCaptionText;
+                cont++;
+            }
+        }
+
+        private void CBCargo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (CBCargo.Text == "ALUMNO")
+            {
+                LMulti.Visible = true;
+                LMulti.Text = "Carrera";
+                TBMulti.Visible = true;
+            }
+            else if (CBCargo.Text == "PROFESOR")
+            {
+                LMulti.Visible = true;
+                LMulti.Text = "Facultad";
+                TBMulti.Visible = true;
+            }
+            else if (CBCargo.Text == "ADMIN")
+            {
+                LMulti.Visible = false;
+                LMulti.Text = "Carrera";
+                TBMulti.Visible = false;
+            }
         }
     }
 }
