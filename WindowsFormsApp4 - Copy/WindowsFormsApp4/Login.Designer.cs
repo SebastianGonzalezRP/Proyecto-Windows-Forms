@@ -119,6 +119,7 @@
             this.Controls.Add(this.BSalir);
             this.Controls.Add(this.BLogin);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -53,6 +53,12 @@
       <DependentUpon>Menu.cs</DependentUpon>
       <Link>Menu.Designer.cs</Link>
     </Compile>
+    <Compile Include="CastigarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CastigarAlumno.Designer.cs">
+      <DependentUpon>CastigarAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     <EmbeddedResource Include="..\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
       <Link>Menu.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CastigarAlumno.resx">
+      <DependentUpon>CastigarAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

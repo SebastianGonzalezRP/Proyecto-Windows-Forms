@@ -245,9 +245,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 288);
+            this.ClientSize = new System.Drawing.Size(512, 281);
             this.Controls.Add(this.GBMenuCuenta);
             this.Name = "MenuCuenta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuCuenta";
             ((System.ComponentModel.ISupportInitialize)(this.PBMenuCuenta)).EndInit();
             this.GBMenuCuenta.ResumeLayout(false);

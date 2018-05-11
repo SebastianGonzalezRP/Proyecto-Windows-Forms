@@ -32,7 +32,7 @@
             this.LSalasNoDisponibles = new System.Windows.Forms.Label();
             this.LBSalasDisponibles = new System.Windows.Forms.ListBox();
             this.LBSalasNoDisponibles = new System.Windows.Forms.ListBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PB1 = new System.Windows.Forms.PictureBox();
             this.BCrearSala = new System.Windows.Forms.Button();
             this.BBorrarSala = new System.Windows.Forms.Button();
             this.BCastigarAlumno = new System.Windows.Forms.Button();
@@ -40,13 +40,16 @@
             this.BCerrarSesion = new System.Windows.Forms.Button();
             this.HeaderText = new System.Windows.Forms.Label();
             this.LUserInfo = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.LNombreAdmin = new System.Windows.Forms.Label();
+            this.LBAlumnos = new System.Windows.Forms.ListBox();
+            this.LAlumnos = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.PB1)).BeginInit();
             this.SuspendLayout();
             // 
             // LSalasDisponibles
             // 
             this.LSalasDisponibles.AutoSize = true;
-            this.LSalasDisponibles.Location = new System.Drawing.Point(236, 43);
+            this.LSalasDisponibles.Location = new System.Drawing.Point(191, 64);
             this.LSalasDisponibles.Name = "LSalasDisponibles";
             this.LSalasDisponibles.Size = new System.Drawing.Size(90, 13);
             this.LSalasDisponibles.TabIndex = 0;
@@ -55,7 +58,7 @@
             // LSalasNoDisponibles
             // 
             this.LSalasNoDisponibles.AutoSize = true;
-            this.LSalasNoDisponibles.Location = new System.Drawing.Point(470, 43);
+            this.LSalasNoDisponibles.Location = new System.Drawing.Point(374, 64);
             this.LSalasNoDisponibles.Name = "LSalasNoDisponibles";
             this.LSalasNoDisponibles.Size = new System.Drawing.Size(109, 13);
             this.LSalasNoDisponibles.TabIndex = 1;
@@ -64,69 +67,70 @@
             // LBSalasDisponibles
             // 
             this.LBSalasDisponibles.FormattingEnabled = true;
-            this.LBSalasDisponibles.Location = new System.Drawing.Point(239, 67);
+            this.LBSalasDisponibles.Location = new System.Drawing.Point(194, 80);
             this.LBSalasDisponibles.Name = "LBSalasDisponibles";
-            this.LBSalasDisponibles.Size = new System.Drawing.Size(174, 277);
+            this.LBSalasDisponibles.Size = new System.Drawing.Size(174, 264);
             this.LBSalasDisponibles.TabIndex = 2;
             // 
             // LBSalasNoDisponibles
             // 
             this.LBSalasNoDisponibles.FormattingEnabled = true;
-            this.LBSalasNoDisponibles.Location = new System.Drawing.Point(462, 67);
+            this.LBSalasNoDisponibles.Location = new System.Drawing.Point(377, 80);
             this.LBSalasNoDisponibles.Name = "LBSalasNoDisponibles";
-            this.LBSalasNoDisponibles.Size = new System.Drawing.Size(174, 277);
+            this.LBSalasNoDisponibles.Size = new System.Drawing.Size(174, 264);
             this.LBSalasNoDisponibles.TabIndex = 3;
             // 
-            // pictureBox1
+            // PB1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 99);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(198, 245);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.PB1.Location = new System.Drawing.Point(5, 80);
+            this.PB1.Name = "PB1";
+            this.PB1.Size = new System.Drawing.Size(174, 264);
+            this.PB1.TabIndex = 4;
+            this.PB1.TabStop = false;
             // 
             // BCrearSala
             // 
-            this.BCrearSala.Location = new System.Drawing.Point(138, 368);
+            this.BCrearSala.Location = new System.Drawing.Point(124, 350);
             this.BCrearSala.Name = "BCrearSala";
-            this.BCrearSala.Size = new System.Drawing.Size(120, 43);
-            this.BCrearSala.TabIndex = 5;
+            this.BCrearSala.Size = new System.Drawing.Size(99, 37);
+            this.BCrearSala.TabIndex = 2;
             this.BCrearSala.Text = "Crear Sala";
             this.BCrearSala.UseVisualStyleBackColor = true;
             // 
             // BBorrarSala
             // 
-            this.BBorrarSala.Location = new System.Drawing.Point(264, 368);
+            this.BBorrarSala.Location = new System.Drawing.Point(229, 350);
             this.BBorrarSala.Name = "BBorrarSala";
-            this.BBorrarSala.Size = new System.Drawing.Size(120, 43);
-            this.BBorrarSala.TabIndex = 6;
+            this.BBorrarSala.Size = new System.Drawing.Size(106, 37);
+            this.BBorrarSala.TabIndex = 3;
             this.BBorrarSala.Text = "Borrar Sala";
             this.BBorrarSala.UseVisualStyleBackColor = true;
             // 
             // BCastigarAlumno
             // 
-            this.BCastigarAlumno.Location = new System.Drawing.Point(12, 368);
+            this.BCastigarAlumno.Location = new System.Drawing.Point(5, 350);
             this.BCastigarAlumno.Name = "BCastigarAlumno";
-            this.BCastigarAlumno.Size = new System.Drawing.Size(120, 43);
-            this.BCastigarAlumno.TabIndex = 7;
+            this.BCastigarAlumno.Size = new System.Drawing.Size(113, 37);
+            this.BCastigarAlumno.TabIndex = 1;
             this.BCastigarAlumno.Text = "Castigar Alumno";
             this.BCastigarAlumno.UseVisualStyleBackColor = true;
+            this.BCastigarAlumno.Click += new System.EventHandler(this.BCastigarAlumno_Click);
             // 
             // BDesocuparSala
             // 
-            this.BDesocuparSala.Location = new System.Drawing.Point(390, 368);
+            this.BDesocuparSala.Location = new System.Drawing.Point(341, 350);
             this.BDesocuparSala.Name = "BDesocuparSala";
-            this.BDesocuparSala.Size = new System.Drawing.Size(120, 43);
-            this.BDesocuparSala.TabIndex = 8;
+            this.BDesocuparSala.Size = new System.Drawing.Size(110, 37);
+            this.BDesocuparSala.TabIndex = 4;
             this.BDesocuparSala.Text = "Desocupar Sala";
             this.BDesocuparSala.UseVisualStyleBackColor = true;
             // 
             // BCerrarSesion
             // 
-            this.BCerrarSesion.Location = new System.Drawing.Point(516, 368);
+            this.BCerrarSesion.Location = new System.Drawing.Point(457, 350);
             this.BCerrarSesion.Name = "BCerrarSesion";
-            this.BCerrarSesion.Size = new System.Drawing.Size(120, 43);
-            this.BCerrarSesion.TabIndex = 9;
+            this.BCerrarSesion.Size = new System.Drawing.Size(94, 37);
+            this.BCerrarSesion.TabIndex = 5;
             this.BCerrarSesion.Text = "Cerrar Sesion";
             this.BCerrarSesion.UseVisualStyleBackColor = true;
             this.BCerrarSesion.Click += new System.EventHandler(this.BCerrarSesion_Click);
@@ -150,11 +154,44 @@
             this.LUserInfo.Size = new System.Drawing.Size(0, 13);
             this.LUserInfo.TabIndex = 11;
             // 
+            // LNombreAdmin
+            // 
+            this.LNombreAdmin.AutoSize = true;
+            this.LNombreAdmin.Location = new System.Drawing.Point(217, 27);
+            this.LNombreAdmin.Name = "LNombreAdmin";
+            this.LNombreAdmin.Size = new System.Drawing.Size(116, 13);
+            this.LNombreAdmin.TabIndex = 12;
+            this.LNombreAdmin.Text = "NOMBRE DEL ADMIN";
+            // 
+            // LBAlumnos
+            // 
+            this.LBAlumnos.FormattingEnabled = true;
+            this.LBAlumnos.Items.AddRange(new object[] {
+            "Alumno 1"});
+            this.LBAlumnos.Location = new System.Drawing.Point(5, 80);
+            this.LBAlumnos.Name = "LBAlumnos";
+            this.LBAlumnos.Size = new System.Drawing.Size(174, 264);
+            this.LBAlumnos.TabIndex = 13;
+            this.LBAlumnos.Visible = false;
+            // 
+            // LAlumnos
+            // 
+            this.LAlumnos.AutoSize = true;
+            this.LAlumnos.Location = new System.Drawing.Point(2, 64);
+            this.LAlumnos.Name = "LAlumnos";
+            this.LAlumnos.Size = new System.Drawing.Size(47, 13);
+            this.LAlumnos.TabIndex = 14;
+            this.LAlumnos.Text = "Alumnos";
+            this.LAlumnos.Visible = false;
+            // 
             // MenuAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(658, 423);
+            this.ClientSize = new System.Drawing.Size(559, 393);
+            this.Controls.Add(this.LAlumnos);
+            this.Controls.Add(this.LBAlumnos);
+            this.Controls.Add(this.LNombreAdmin);
             this.Controls.Add(this.LUserInfo);
             this.Controls.Add(this.HeaderText);
             this.Controls.Add(this.BCerrarSesion);
@@ -162,14 +199,15 @@
             this.Controls.Add(this.BCastigarAlumno);
             this.Controls.Add(this.BBorrarSala);
             this.Controls.Add(this.BCrearSala);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PB1);
             this.Controls.Add(this.LBSalasNoDisponibles);
             this.Controls.Add(this.LBSalasDisponibles);
             this.Controls.Add(this.LSalasNoDisponibles);
             this.Controls.Add(this.LSalasDisponibles);
             this.Name = "MenuAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuAdmin";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,7 +219,7 @@
         private System.Windows.Forms.Label LSalasNoDisponibles;
         private System.Windows.Forms.ListBox LBSalasDisponibles;
         private System.Windows.Forms.ListBox LBSalasNoDisponibles;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PB1;
         private System.Windows.Forms.Button BCrearSala;
         private System.Windows.Forms.Button BBorrarSala;
         private System.Windows.Forms.Button BCastigarAlumno;
@@ -189,5 +227,8 @@
         private System.Windows.Forms.Button BCerrarSesion;
         private System.Windows.Forms.Label HeaderText;
         private System.Windows.Forms.Label LUserInfo;
+        private System.Windows.Forms.Label LNombreAdmin;
+        private System.Windows.Forms.ListBox LBAlumnos;
+        private System.Windows.Forms.Label LAlumnos;
     }
 }

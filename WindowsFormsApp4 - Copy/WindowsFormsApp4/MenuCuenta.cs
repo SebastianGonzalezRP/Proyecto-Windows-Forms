@@ -32,36 +32,41 @@ namespace WindowsFormsApp4
             string cargo = CBCargo.Text;
             string rut = TBRut.Text;
             string multi = TBMulti.Text;
+            bool crear = true;
 
             if (nombre != "" && apellido != "" && mail != "" && password != "" && cargo != "" && rut != "") //Comprobando Que se llenen Todos los Datos Requeridos
             {
                 // Almacenando Los Text Box en variables
-                
+
                 foreach (ClassLibrary2.Credencial c in credenciales)
                 {
                     if (c.rut == rut || c.username == mail) //Ya Existe un Usuario Con esos Datos -->Error
                     {
                         MessageBox.Show("Imposible Crear Usuario");
+                        crear = false;
                         break;
                     }
                 }
-                ClassLibrary2.Credencial a = new ClassLibrary2.Credencial(mail, password,cargo,rut);
-                credenciales.Add(a); //Agrega la credencial de la nueva cuenta, asociada a la persona mediante el rut
+                if (crear)
+                {
+                    ClassLibrary2.Credencial a = new ClassLibrary2.Credencial(mail, password, cargo, rut);
+                    credenciales.Add(a); //Agrega la credencial de la nueva cuenta, asociada a la persona mediante el rut
 
-                if (cargo == "ALUMNO") //Crea La nueva cuenta como Estudiante
-                {
-                    ClassLibrary2.Estudiante b = new ClassLibrary2.Estudiante(nombre, apellido, mail, multi, rut);
-                    personas.Add(b);
-                }
-                else if (cargo == "PROFESOR")//Crea La nueva cuenta como Profesor
-                {
-                    ClassLibrary2.Profesor b = new ClassLibrary2.Profesor(nombre, apellido, mail, multi, rut);
-                    personas.Add(b);
-                }
-                else if (cargo == "ADMIN")//Crea La nueva cuenta como Admin
-                {
-                    ClassLibrary2.Persona b = new ClassLibrary2.Persona(nombre, apellido, mail, rut);
-                    personas.Add(b);
+                    if (cargo == "ALUMNO") //Crea La nueva cuenta como Estudiante
+                    {
+                        ClassLibrary2.Estudiante b = new ClassLibrary2.Estudiante(nombre, apellido, mail, multi, rut);
+                        personas.Add(b);
+                    }
+                    else if (cargo == "PROFESOR")//Crea La nueva cuenta como Profesor
+                    {
+                        ClassLibrary2.Profesor b = new ClassLibrary2.Profesor(nombre, apellido, mail, multi, rut);
+                        personas.Add(b);
+                    }
+                    else if (cargo == "ADMIN")//Crea La nueva cuenta como Admin
+                    {
+                        ClassLibrary2.Persona b = new ClassLibrary2.Persona(nombre, apellido, mail, rut);
+                        personas.Add(b);
+                    }
                 }
                 //Limpiando Los TextBox despues de recibir parametros
                 TBNombre.Clear();
@@ -87,11 +92,11 @@ namespace WindowsFormsApp4
 
         private void setupData()
         {
-            credenciales.Add(new ClassLibrary2.Credencial("alumno", "pass", "ALUMNO", "195672229"));
-            credenciales.Add(new ClassLibrary2.Credencial("admin", "pass", "ADMIN", "1"));
+            credenciales.Add(new ClassLibrary2.Credencial("alumno", "pass", "ALUMNO", "112223334"));
+            credenciales.Add(new ClassLibrary2.Credencial("admin", "pass", "ADMIN", "223334445"));
 
-            personas.Add(new ClassLibrary2.Estudiante("Sebastian", "Gonzalez", "slgonzalez@miuandes.cl", "Ingenieria", "195672229"));
-            personas.Add(new ClassLibrary2.Persona("Exequiel", "Vial", "ejvial@miuandes", "1"));
+            personas.Add(new ClassLibrary2.Estudiante("Sebastian", "Gonzalez", "slgonzalez@miuandes.cl", "Ingenieria", "112223334"));
+            personas.Add(new ClassLibrary2.Persona("Exequiel", "Vial", "ejvial@miuandes", "223334445"));
         }
 
         private void TBRut_Enter(object sender, EventArgs e)
