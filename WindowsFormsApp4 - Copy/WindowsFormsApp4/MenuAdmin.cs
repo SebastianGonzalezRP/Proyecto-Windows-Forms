@@ -14,9 +14,13 @@ namespace WindowsFormsApp4
     public partial class MenuAdmin : Form
     {
         Thread th;
+        public static List<ClassLibrary2.Credencial> credenciales = new List<ClassLibrary2.Credencial>();
+        public List<ClassLibrary2.Persona> personas = new List<ClassLibrary2.Persona>();
         public MenuAdmin()
         {
             InitializeComponent();
+            credenciales = new List<ClassLibrary2.Credencial>();
+            personas= new List<ClassLibrary2.Persona>();
         }
 
         private void BCerrarSesion_Click(object sender, EventArgs e)
@@ -29,7 +33,7 @@ namespace WindowsFormsApp4
 
         private void openLogin()
         {
-            Application.Run(new Login());
+            Application.Run(new Login(credenciales,personas));
         }
 
         private void BCastigarAlumno_Click(object sender, EventArgs e)

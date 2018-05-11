@@ -41,3 +41,4 @@ C:\Users\Seba\Desktop\Proyecto-Windows-Forms\WindowsFormsApp4 - Copy\WindowsForm
 C:\Users\Seba\Desktop\Proyecto-Windows-Forms\WindowsFormsApp4 - Copy\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.CopyComplete
 C:\Users\Seba\Desktop\Proyecto-Windows-Forms\WindowsFormsApp4 - Copy\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.MenuAdmin.resources
 C:\Users\Seba\Desktop\Proyecto-Windows-Forms\WindowsFormsApp4 - Copy\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.CastigarAlumno.resources
+C:\Users\Seba\Desktop\Proyecto-Windows-Forms\WindowsFormsApp4 - Copy\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.InicialRun.resources

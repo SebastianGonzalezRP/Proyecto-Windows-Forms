@@ -18,10 +18,13 @@ namespace WindowsFormsApp4
 
         public static List<ClassLibrary2.Credencial> credenciales = new List<ClassLibrary2.Credencial>();
         public List<ClassLibrary2.Persona> personas = new List<ClassLibrary2.Persona>();
-        public MenuCuenta()
+
+
+        public MenuCuenta(List<ClassLibrary2.Credencial> _credencials, List<ClassLibrary2.Persona> _personas)
         {
             InitializeComponent();
-            setupData();
+            credenciales = _credencials;
+            personas = _personas;
         }
         private void BAceptar_Click(object sender, EventArgs e)
         {
@@ -87,7 +90,7 @@ namespace WindowsFormsApp4
 
         private void openLogin()
         {
-            Application.Run(new Login());
+            Application.Run(new Login(credenciales,personas));
         }
 
         private void setupData()

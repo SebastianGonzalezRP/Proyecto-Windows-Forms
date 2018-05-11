@@ -16,10 +16,13 @@ namespace WindowsFormsApp4
     {
         Thread th;
         public static List<ClassLibrary2.Credencial> credenciales = new List<ClassLibrary2.Credencial>();
-        public Login()
+        public List<ClassLibrary2.Persona> personas = new List<ClassLibrary2.Persona>();
+
+        public Login(List<Credencial> _credenciales,List<Persona>_personas)
         {
             InitializeComponent();
-            setupData();
+            credenciales = _credenciales;
+            personas = _personas;
         }
 
         #region Botones Login
@@ -83,20 +86,13 @@ namespace WindowsFormsApp4
         }//Abrira el Menu de alumnos y profesores
         private void openMenuCuenta()
                 {
-                    Application.Run(new MenuCuenta());
+                    Application.Run(new MenuCuenta(credenciales,personas));
                 }//Abrira el Menu Para crear una nueva cuenta
-
         private void openMenuAdmin()
         {
             Application.Run(new MenuAdmin());
         }
 
         #endregion
-
-        private void setupData()
-        {
-            credenciales.Add(new ClassLibrary2.Credencial("alumno", "pass", "ALUMNO", "195672229"));
-            credenciales.Add(new ClassLibrary2.Credencial("admin", "pass", "ADMIN", "1"));
-        }
     }
 }

@@ -17,6 +17,8 @@ namespace WindowsFormsApp4
     {
         Thread th;
         private Edificio edificio = new Edificio();
+        public static List<ClassLibrary2.Credencial> credenciales = new List<ClassLibrary2.Credencial>();
+        public List<ClassLibrary2.Persona> personas = new List<ClassLibrary2.Persona>();
 
         private List<Accesorio> carrito = new List<Accesorio>();
         BindingSource carritoBinding = new BindingSource();
@@ -33,6 +35,9 @@ namespace WindowsFormsApp4
         {
             InitializeComponent();
             SetupData();
+            credenciales = new List<ClassLibrary2.Credencial>();
+            personas = new List<ClassLibrary2.Persona>();
+
 
             //ACCESORIOS DISPONIBLES
             accesoriosBinding.DataSource = edificio.accesorios;
@@ -167,7 +172,7 @@ namespace WindowsFormsApp4
 
         private void openLogin()
         {
-            Application.Run(new Login());
+            Application.Run(new Login(credenciales,personas));
         }
     }
 }
