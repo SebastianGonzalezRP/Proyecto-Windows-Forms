@@ -195,9 +195,11 @@
             this.Controls.Add(this.HTMenuArriendo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(535, 478);
             this.MinimumSize = new System.Drawing.Size(535, 478);
             this.Name = "Menu";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Menu";
             this.ResumeLayout(false);

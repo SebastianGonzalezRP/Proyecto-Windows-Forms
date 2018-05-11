@@ -97,10 +97,10 @@
             // LPassword
             // 
             this.LPassword.AutoSize = true;
-            this.LPassword.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LPassword.Location = new System.Drawing.Point(12, 111);
             this.LPassword.Name = "LPassword";
-            this.LPassword.Size = new System.Drawing.Size(94, 20);
+            this.LPassword.Size = new System.Drawing.Size(86, 20);
             this.LPassword.TabIndex = 6;
             this.LPassword.Text = "Password";
             // 
@@ -118,7 +118,9 @@
             this.Controls.Add(this.LLCrearCuenta);
             this.Controls.Add(this.BSalir);
             this.Controls.Add(this.BLogin);
+            this.MaximizeBox = false;
             this.Name = "Login";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
